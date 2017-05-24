@@ -4,7 +4,7 @@ import { apiBaseUrl } from '../utils/config'
 var jwtDecode = require('jwt-decode')
 
 const AUTH_TOKEN_KEY = 'auth_token'
-const REFRESH_TOKEN_KEY = 'refresh`_token'
+const REFRESH_TOKEN_KEY = 'refresh_token'
 
 export function signin (userParams) {
   return axios.post(`${apiBaseUrl()}/user_auth/`, { auth: userParams })
